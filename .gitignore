@@ -1,0 +1,11 @@
+.idea
+.vscode
+coverage
+node_modules
+.env
+*.db
+.*.swp
+*.launch
+*.tmproject
+*.sublime-project
+*.sublime-workspace

@@ -1,0 +1,25 @@
+{
+    "name": "deery-server",
+    "version": "1.0.0",
+    "description": "An API providing calendar-based data from web services and local resources",
+    "main": "index.js",
+    "scripts": {
+        "prod": "cross-env NODE_ENV=prod node src/app.js",
+        "dev": "cross-env NODE_ENV=dev node ./node_modules/.bin/nodemon src/app.js",
+        "test": "cross-env NODE_ENV=test tape test/**.js",
+        "coverage": "node ./node_modules/.bin/istanbul cover src/app.test.js --include-all-sources --root ./src"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/poisonborz/deery-server"
+    },
+    "author": {
+        "name": "poisonborz",
+        "email": "mail@poisonborz.com",
+        "url": "https://poisonborz.com"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "koa": "2.7.0"
+    }
+}
